@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "W24257A")(type "KiCad")(uri "${KIPRJMOD}/W24257A.kicad_sym")(options "")(descr ""))
+  (lib (name "TMP68681P")(type "KiCad")(uri "${KIPRJMOD}/TMP68681P.kicad_sym")(options "")(descr ""))
+)
