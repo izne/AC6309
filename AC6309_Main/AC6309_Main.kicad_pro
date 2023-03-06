@@ -454,7 +454,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "AC6309_Main.net",
-      "specctra_dsn": "",
+      "specctra_dsn": "AC6309_Main.dsn",
       "step": "",
       "vrml": ""
     },
