@@ -1,680 +1,729 @@
-162587671409091
-Button_Switch_THT
-KSA_Tactile_SPST
-KSA http://www.ckswitches.com/media/1457/ksa_ksl.pdf
-SWITCH SMD KSA SW
+174320802582468
+Resistor_THT
+R_Array_SIP4
+4-pin Resistor SIP pack
+R
+0
+4
+4
+Resistor_THT
+R_Array_SIP5
+5-pin Resistor SIP pack
+R
 0
 5
 5
-Button_Switch_THT
-Nidec_Copal_SH-7010C
-4-bit rotary coded switch, through-hole, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
-rotary switch bcd
-0
-6
-5
-Button_Switch_THT
-Push_E-Switch_KS01Q01
-E-Switch KS01Q01 http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf
-Push Button
-0
-4
-4
-Button_Switch_THT
-SW_CW_GPTS203211B
-SPST Off-On Pushbutton, 1A, 30V, CW Industries P/N GPTS203211B, http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf
-SPST button switch Off-On
-0
-2
-2
-Button_Switch_THT
-SW_CuK_JS202011AQN_DPDT_Angled
-CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
-switch DPDT
+Resistor_THT
+R_Array_SIP6
+6-pin Resistor SIP pack
+R
 0
 6
 6
-Button_Switch_THT
-SW_CuK_JS202011CQN_DPDT_Straight
-CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
-switch DPDT
-0
-6
-6
-Button_Switch_THT
-SW_CuK_OS102011MA1QN1_SPDT_Angled
-CuK miniature slide switch, OS series, SPDT, right angle, http://www.ckswitches.com/media/1428/os.pdf
-switch SPDT
-0
-5
-3
-Button_Switch_THT
-SW_DIP_SPSTx01_Piano_10.8x4.1mm_W7.62mm_P2.54mm
-1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-2
-2
-Button_Switch_THT
-SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile
-1x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-2
-2
-Button_Switch_THT
-SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm
-1x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x4.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-2
-2
-Button_Switch_THT
-SW_DIP_SPSTx02_Piano_10.8x6.64mm_W7.62mm_P2.54mm
-2x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x6.64mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-4
-4
-Button_Switch_THT
-SW_DIP_SPSTx02_Piano_CTS_Series194-2MSTN_W7.62mm_P2.54mm
-2x-dip-switch SPST CTS_Series194-2MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-4
-4
-Button_Switch_THT
-SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile
-2x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x6.64mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-4
-4
-Button_Switch_THT
-SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm
-2x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x7.26mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-4
-4
-Button_Switch_THT
-SW_DIP_SPSTx03_Piano_10.8x9.18mm_W7.62mm_P2.54mm
-3x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x9.18mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-6
-6
-Button_Switch_THT
-SW_DIP_SPSTx03_Piano_CTS_Series194-3MSTN_W7.62mm_P2.54mm
-3x-dip-switch SPST CTS_Series194-3MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-6
-6
-Button_Switch_THT
-SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile
-3x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x9.18mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-6
-6
-Button_Switch_THT
-SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm
-3x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x9.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-6
-6
-Button_Switch_THT
-SW_DIP_SPSTx04_Piano_10.8x11.72mm_W7.62mm_P2.54mm
-4x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x11.72mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-8
-8
-Button_Switch_THT
-SW_DIP_SPSTx04_Piano_CTS_Series194-4MSTN_W7.62mm_P2.54mm
-4x-dip-switch SPST CTS_Series194-4MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-8
-8
-Button_Switch_THT
-SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile
-4x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x11.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-8
-8
-Button_Switch_THT
-SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm
-4x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x12.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-8
-8
-Button_Switch_THT
-SW_DIP_SPSTx05_Piano_10.8x14.26mm_W7.62mm_P2.54mm
-5x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x14.26mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-10
-10
-Button_Switch_THT
-SW_DIP_SPSTx05_Piano_CTS_Series194-5MSTN_W7.62mm_P2.54mm
-5x-dip-switch SPST CTS_Series194-5MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-10
-10
-Button_Switch_THT
-SW_DIP_SPSTx05_Slide_6.7x14.26mm_W7.62mm_P2.54mm_LowProfile
-5x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x14.26mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-10
-10
-Button_Switch_THT
-SW_DIP_SPSTx05_Slide_9.78x14.88mm_W7.62mm_P2.54mm
-5x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x14.88mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-10
-10
-Button_Switch_THT
-SW_DIP_SPSTx06_Piano_10.8x16.8mm_W7.62mm_P2.54mm
-6x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x16.8mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-12
-12
-Button_Switch_THT
-SW_DIP_SPSTx06_Piano_CTS_Series194-6MSTN_W7.62mm_P2.54mm
-6x-dip-switch SPST CTS_Series194-6MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-12
-12
-Button_Switch_THT
-SW_DIP_SPSTx06_Slide_6.7x16.8mm_W7.62mm_P2.54mm_LowProfile
-6x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x16.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-12
-12
-Button_Switch_THT
-SW_DIP_SPSTx06_Slide_9.78x17.42mm_W7.62mm_P2.54mm
-6x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x17.42mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-12
-12
-Button_Switch_THT
-SW_DIP_SPSTx07_Piano_10.8x19.34mm_W7.62mm_P2.54mm
-7x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x19.34mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-14
-14
-Button_Switch_THT
-SW_DIP_SPSTx07_Piano_CTS_Series194-7MSTN_W7.62mm_P2.54mm
-7x-dip-switch SPST CTS_Series194-7MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-14
-14
-Button_Switch_THT
-SW_DIP_SPSTx07_Slide_6.7x19.34mm_W7.62mm_P2.54mm_LowProfile
-7x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x19.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-14
-14
-Button_Switch_THT
-SW_DIP_SPSTx07_Slide_9.78x19.96mm_W7.62mm_P2.54mm
-7x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x19.96mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-14
-14
-Button_Switch_THT
-SW_DIP_SPSTx08_Piano_10.8x21.88mm_W7.62mm_P2.54mm
-8x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x21.88mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-16
-16
-Button_Switch_THT
-SW_DIP_SPSTx08_Piano_CTS_Series194-8MSTN_W7.62mm_P2.54mm
-8x-dip-switch SPST CTS_Series194-8MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-16
-16
-Button_Switch_THT
-SW_DIP_SPSTx08_Slide_6.7x21.88mm_W7.62mm_P2.54mm_LowProfile
-8x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x21.88mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-16
-16
-Button_Switch_THT
-SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm
-8x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x22.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-16
-16
-Button_Switch_THT
-SW_DIP_SPSTx09_Piano_10.8x24.42mm_W7.62mm_P2.54mm
-9x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x24.42mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-18
-18
-Button_Switch_THT
-SW_DIP_SPSTx09_Piano_CTS_Series194-9MSTN_W7.62mm_P2.54mm
-9x-dip-switch SPST CTS_Series194-9MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-18
-18
-Button_Switch_THT
-SW_DIP_SPSTx09_Slide_6.7x24.42mm_W7.62mm_P2.54mm_LowProfile
-9x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x24.42mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-18
-18
-Button_Switch_THT
-SW_DIP_SPSTx09_Slide_9.78x25.04mm_W7.62mm_P2.54mm
-9x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x25.04mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-18
-18
-Button_Switch_THT
-SW_DIP_SPSTx10_Piano_10.8x26.96mm_W7.62mm_P2.54mm
-10x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x26.96mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-20
-20
-Button_Switch_THT
-SW_DIP_SPSTx10_Piano_CTS_Series194-10MSTN_W7.62mm_P2.54mm
-10x-dip-switch SPST CTS_Series194-10MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-20
-20
-Button_Switch_THT
-SW_DIP_SPSTx10_Slide_6.7x26.96mm_W7.62mm_P2.54mm_LowProfile
-10x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x26.96mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-20
-20
-Button_Switch_THT
-SW_DIP_SPSTx10_Slide_9.78x27.58mm_W7.62mm_P2.54mm
-10x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x27.58mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-20
-20
-Button_Switch_THT
-SW_DIP_SPSTx11_Piano_10.8x29.5mm_W7.62mm_P2.54mm
-11x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x29.5mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-22
-22
-Button_Switch_THT
-SW_DIP_SPSTx11_Piano_CTS_Series194-11MSTN_W7.62mm_P2.54mm
-11x-dip-switch SPST CTS_Series194-11MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-22
-22
-Button_Switch_THT
-SW_DIP_SPSTx11_Slide_6.7x29.5mm_W7.62mm_P2.54mm_LowProfile
-11x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x29.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-22
-22
-Button_Switch_THT
-SW_DIP_SPSTx11_Slide_9.78x30.12mm_W7.62mm_P2.54mm
-11x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x30.12mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-22
-22
-Button_Switch_THT
-SW_DIP_SPSTx12_Piano_10.8x32.04mm_W7.62mm_P2.54mm
-12x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x32.04mm
-DIP Switch SPST Piano 7.62mm 300mil
-0
-24
-24
-Button_Switch_THT
-SW_DIP_SPSTx12_Piano_CTS_Series194-12MSTN_W7.62mm_P2.54mm
-12x-dip-switch SPST CTS_Series194-12MSTN, Piano, row spacing 7.62 mm (300 mils), body size  (see https://www.ctscorp.com/wp-content/uploads/194-195.pdf)
-DIP Switch SPST Piano 7.62mm 300mil
-0
-24
-24
-Button_Switch_THT
-SW_DIP_SPSTx12_Slide_6.7x32.04mm_W7.62mm_P2.54mm_LowProfile
-12x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x32.04mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile
-DIP Switch SPST Slide 7.62mm 300mil LowProfile
-0
-24
-24
-Button_Switch_THT
-SW_DIP_SPSTx12_Slide_9.78x32.66mm_W7.62mm_P2.54mm
-12x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x32.66mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
-0
-24
-24
-Button_Switch_THT
-SW_E-Switch_EG1224_SPDT_Angled
-E-Switch slide switch, EG series, SPDT, right angle, http://spec_sheets.e-switch.com/specs/P040042.pdf
-switch SPDT
+Resistor_THT
+R_Array_SIP7
+7-pin Resistor SIP pack
+R
 0
 7
-3
-Button_Switch_THT
-SW_E-Switch_EG1271_SPDT
-E-Switch sub miniature slide switch, EG series, SPDT, http://spec_sheets.e-switch.com/specs/P040047.pdf
-switch DPDT
-0
-6
-6
-Button_Switch_THT
-SW_E-Switch_EG2219_DPDT_Angled
-E-Switch slide switch, EG series, DPDT, right angle, http://spec_sheets.e-switch.com/specs/P040170.pdf
-switch DPDT
-0
-10
-6
-Button_Switch_THT
-SW_Lever_1P2T_NKK_GW12LxH
-Switch, single pole double throw, right angle, http://www.nkkswitches.com/pdf/GW.pdf
-switch single-pole double-throw spdt ON-ON horizontal
-0
-5
-3
-Button_Switch_THT
-SW_MEC_5GTH9
-MEC 5G single pole normally-open tactile switch https://cdn.sos.sk/productdata/80/f6/aabf7be6/5gth9358222.pdf
-switch normally-open pushbutton push-button
-0
-4
-2
-Button_Switch_THT
-SW_NKK_BB15AH
-https://www.nkkswitches.com/pdf/Bpushbuttons-1.pdf
-Pushbutton Right-angle
-0
-5
-3
-Button_Switch_THT
-SW_NKK_G1xJP
-Switch NKK G1xJP http://www.nkkswitches.com/pdf/gwillum.pdf
-SWITCH TOGGLE ILLUM SPDT NKK
-0
-6
-6
-Button_Switch_THT
-SW_NKK_GW12LJP
-Switch, single pole double throw, illuminated paddle, http://www.nkkswitches.com/pdf/gwillum.pdf
-switch single-pole double-throw spdt ON-ON illuminated LED
-0
-6
-6
-Button_Switch_THT
-SW_PUSH-12mm
-SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
-tact sw push 12mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH-12mm_Wuerth-430476085716
-SW PUSH 12mm http://katalog.we-online.de/em/datasheet/430476085716.pdf
-tact sw push 12mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm
-https://www.omron.com/ecb/products/pdf/en-b3f.pdf
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H4.3mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=4.3mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H5mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H7.3mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=7.3mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H8.5mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=8.5mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H8mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=8mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H9.5mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=9.5mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_6mm_H13mm
-tactile push button, 6x6mm e.g. PHAP33xx series, height=13mm
-tact sw push 6mm
-0
-4
-2
-Button_Switch_THT
-SW_PUSH_E-Switch_FS5700DP_DPDT
-FS5700 series pushbutton footswitch, DPDT, https://www.e-switch.com/system/asset/product_line/data_sheet/226/FS5700.pdf
-switch DPDT footswitch
-0
-6
-6
-Button_Switch_THT
-SW_PUSH_LCD_E3_SAxxxx
-Switch with LCD screen E3 SAxxxx
-switch normally-open pushbutton push-button LCD
-0
-6
-6
-Button_Switch_THT
-SW_PUSH_LCD_E3_SAxxxx_SocketPins
-Switch with LCD screen E3 SAxxxx
-switch normally-open pushbutton push-button LCD
-0
-6
-6
-Button_Switch_THT
-SW_Push_1P1T_NO_LED_E-Switch_TL1250
-illuminated right angle tact switch https://www.e-switch.com/system/asset/product_line/data_sheet/148/TL1250.pdf
-led push switch right angle
-0
-6
-4
-Button_Switch_THT
-SW_Push_1P2T_Vertical_E-Switch_800UDP8P1A1M6
- right angle SPDT push button https://www.e-switch.com/system/asset/product_line/data_sheet/210/800U.pdf
-IP67 ultra-miniture horizontal
-0
-5
-3
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH1xxxxxxV2
-momentary / push-push button, h=17.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH2xxxxxxV2
-momentary / push-push button, h=23mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH3xxxxxxV2
-momentary / push-push button, h=20.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH4xxxxxxV2
-momentary / push-push button, h=15mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2OAH5xxxxxxV2
-momentary / push-push button, h=13mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH1xxxxxxV2
-momentary / push-push button, h=17.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH2xxxxxxV2
-momentary / push-push button, h=23mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH3xxxxxxV2
-momentary / push-push button, h=20.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH4xxxxxxV2
-momentary / push-push button, h=15mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Vertical_E-Switch_800UDP8P1A1M6
- right angle DPDT push button https://www.e-switch.com/system/asset/product_line/data_sheet/210/800U.pdf
-IP67 ultra-miniture horizontal
+7
+Resistor_THT
+R_Array_SIP8
+8-pin Resistor SIP pack
+R
 0
 8
-6
-Button_Switch_THT
-SW_SPST_Omron_B3F-315x_Angled
-tactile switch, 7.3mm x 6.25mm  x 7.4mm, right angle, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf
-tactile switch Omron B3F right angle through hole
+8
+Resistor_THT
+R_Array_SIP9
+9-pin Resistor SIP pack
+R
 0
-4
+9
+9
+Resistor_THT
+R_Array_SIP10
+10-pin Resistor SIP pack
+R
+0
+10
+10
+Resistor_THT
+R_Array_SIP11
+11-pin Resistor SIP pack
+R
+0
+11
+11
+Resistor_THT
+R_Array_SIP12
+12-pin Resistor SIP pack
+R
+0
+12
+12
+Resistor_THT
+R_Array_SIP13
+13-pin Resistor SIP pack
+R
+0
+13
+13
+Resistor_THT
+R_Array_SIP14
+14-pin Resistor SIP pack
+R
+0
+14
+14
+Resistor_THT
+R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical
+Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=1.9mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Vertical pin pitch 1.9mm 0.167W length 3.6mm diameter 1.6mm
+0
 2
-Button_Switch_THT
-SW_Slide_1P2T_CK_OS102011MS2Q
-CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf
-switch SPDT
-0
-5
-3
-Button_Switch_THT
-SW_TH_Tactile_Omron_B3F-10xx
-SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf
-Omron B3F-10xx
-0
-4
 2
-Button_Switch_THT
-SW_Tactile_SKHH_Angled
-tactile switch 6mm ALPS SKHH right angle http://www.alps.com/prod/info/E/HTML/Tact/SnapIn/SKHH/SKHHLUA010.html
-tactile switch 6mm ALPS SKHH right angle
+Resistor_THT
+R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm
 0
-4
 2
-Button_Switch_THT
-SW_Tactile_SPST_Angled_PTS645Vx31-2LFS
-tactile switch SPST right angle, PTS645VL31-2 LFS
-tactile switch SPST angled PTS645VL31-2 LFS C&K Button
-0
-4
 2
-Button_Switch_THT
-SW_Tactile_SPST_Angled_PTS645Vx39-2LFS
-tactile switch SPST right angle, PTS645VL39-2 LFS
-tactile switch SPST angled PTS645VL39-2 LFS C&K Button
+Resistor_THT
+R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
+Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm
 0
-4
 2
-Button_Switch_THT
-SW_Tactile_SPST_Angled_PTS645Vx58-2LFS
-tactile switch SPST right angle, PTS645VL58-2 LFS
-tactile switch SPST angled PTS645VL58-2 LFS C&K Button
-0
-4
 2
-Button_Switch_THT
-SW_Tactile_SPST_Angled_PTS645Vx83-2LFS
-tactile switch SPST right angle, PTS645VL83-2 LFS
-tactile switch SPST angled PTS645VL83-2 LFS C&K Button
+Resistor_THT
+R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical
+Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Vertical pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm
 0
-4
 2
-Button_Switch_THT
-SW_Tactile_Straight_KSA0Axx1LFTR
-SW PUSH SMALL http://www.ckswitches.com/media/1457/ksa_ksl.pdf
-SW PUSH SMALL Tactile C&K
-0
-4
 2
-Button_Switch_THT
-SW_Tactile_Straight_KSL0Axx1LFTR
-SW PUSH SMALL http://www.ckswitches.com/media/1457/ksa_ksl.pdf
-SW PUSH SMALL Tactile C&K
+Resistor_THT
+R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=2.54mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Vertical pin pitch 2.54mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical
+Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=5.08mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Vertical pin pitch 5.08mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal
+Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=15.24mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Horizontal pin pitch 15.24mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical
+Resistor, Axial_DIN0309 series, Axial, Vertical, pin pitch=2.54mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Vertical pin pitch 2.54mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical
+Resistor, Axial_DIN0309 series, Axial, Vertical, pin pitch=5.08mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Vertical pin pitch 5.08mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=15.24mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 15.24mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=20.32mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 20.32mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0309_L9.0mm_D3.2mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=25.4mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 25.4mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical
+Resistor, Axial_DIN0411 series, Axial, Vertical, pin pitch=5.08mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Vertical pin pitch 5.08mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P7.62mm_Vertical
+Resistor, Axial_DIN0411 series, Axial, Vertical, pin pitch=7.62mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Vertical pin pitch 7.62mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal
+Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=12.7mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Horizontal pin pitch 12.7mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal
+Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=15.24mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Horizontal pin pitch 15.24mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=20.32mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Horizontal pin pitch 20.32mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0411_L9.9mm_D3.6mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=25.4mm, 1W, length*diameter=9.9*3.6mm^2
+Resistor Axial_DIN0411 series Axial Horizontal pin pitch 25.4mm 1W length 9.9mm diameter 3.6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical
+Resistor, Axial_DIN0414 series, Axial, Vertical, pin pitch=5.08mm, 2W, length*diameter=11.9*4.5mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0414 series Axial Vertical pin pitch 5.08mm 2W length 11.9mm diameter 4.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0414_L11.9mm_D4.5mm_P7.62mm_Vertical
+Resistor, Axial_DIN0414 series, Axial, Vertical, pin pitch=7.62mm, 2W, length*diameter=11.9*4.5mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0414 series Axial Vertical pin pitch 7.62mm 2W length 11.9mm diameter 4.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal
+Resistor, Axial_DIN0414 series, Axial, Horizontal, pin pitch=15.24mm, 2W, length*diameter=11.9*4.5mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0414 series Axial Horizontal pin pitch 15.24mm 2W length 11.9mm diameter 4.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0414 series, Axial, Horizontal, pin pitch=20.32mm, 2W, length*diameter=11.9*4.5mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0414 series Axial Horizontal pin pitch 20.32mm 2W length 11.9mm diameter 4.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0414_L11.9mm_D4.5mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0414 series, Axial, Horizontal, pin pitch=25.4mm, 2W, length*diameter=11.9*4.5mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0414 series Axial Horizontal pin pitch 25.4mm 2W length 11.9mm diameter 4.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical
+Resistor, Axial_DIN0516 series, Axial, Vertical, pin pitch=5.08mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0516 series Axial Vertical pin pitch 5.08mm 2W length 15.5mm diameter 5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0516_L15.5mm_D5.0mm_P7.62mm_Vertical
+Resistor, Axial_DIN0516 series, Axial, Vertical, pin pitch=7.62mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0516 series Axial Vertical pin pitch 7.62mm 2W length 15.5mm diameter 5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0516 series, Axial, Horizontal, pin pitch=20.32mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0516 series Axial Horizontal pin pitch 20.32mm 2W length 15.5mm diameter 5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0516 series, Axial, Horizontal, pin pitch=25.4mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0516 series Axial Horizontal pin pitch 25.4mm 2W length 15.5mm diameter 5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal
+Resistor, Axial_DIN0516 series, Axial, Horizontal, pin pitch=30.48mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0516 series Axial Horizontal pin pitch 30.48mm 2W length 15.5mm diameter 5mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0614_L14.3mm_D5.7mm_P5.08mm_Vertical
+Resistor, Axial_DIN0614 series, Axial, Vertical, pin pitch=5.08mm, 1.5W, length*diameter=14.3*5.7mm^2
+Resistor Axial_DIN0614 series Axial Vertical pin pitch 5.08mm 1.5W length 14.3mm diameter 5.7mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical
+Resistor, Axial_DIN0614 series, Axial, Vertical, pin pitch=7.62mm, 1.5W, length*diameter=14.3*5.7mm^2
+Resistor Axial_DIN0614 series Axial Vertical pin pitch 7.62mm 1.5W length 14.3mm diameter 5.7mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal
+Resistor, Axial_DIN0614 series, Axial, Horizontal, pin pitch=15.24mm, 1.5W, length*diameter=14.3*5.7mm^2
+Resistor Axial_DIN0614 series Axial Horizontal pin pitch 15.24mm 1.5W length 14.3mm diameter 5.7mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0614 series, Axial, Horizontal, pin pitch=20.32mm, 1.5W, length*diameter=14.3*5.7mm^2
+Resistor Axial_DIN0614 series Axial Horizontal pin pitch 20.32mm 1.5W length 14.3mm diameter 5.7mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0614_L14.3mm_D5.7mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0614 series, Axial, Horizontal, pin pitch=25.4mm, 1.5W, length*diameter=14.3*5.7mm^2
+Resistor Axial_DIN0614 series Axial Horizontal pin pitch 25.4mm 1.5W length 14.3mm diameter 5.7mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0617_L17.0mm_D6.0mm_P5.08mm_Vertical
+Resistor, Axial_DIN0617 series, Axial, Vertical, pin pitch=5.08mm, 2W, length*diameter=17*6mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0617 series Axial Vertical pin pitch 5.08mm 2W length 17mm diameter 6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0617_L17.0mm_D6.0mm_P7.62mm_Vertical
+Resistor, Axial_DIN0617 series, Axial, Vertical, pin pitch=7.62mm, 2W, length*diameter=17*6mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0617 series Axial Vertical pin pitch 7.62mm 2W length 17mm diameter 6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0617_L17.0mm_D6.0mm_P20.32mm_Horizontal
+Resistor, Axial_DIN0617 series, Axial, Horizontal, pin pitch=20.32mm, 2W, length*diameter=17*6mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0617 series Axial Horizontal pin pitch 20.32mm 2W length 17mm diameter 6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0617_L17.0mm_D6.0mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0617 series, Axial, Horizontal, pin pitch=25.4mm, 2W, length*diameter=17*6mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0617 series Axial Horizontal pin pitch 25.4mm 2W length 17mm diameter 6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0617_L17.0mm_D6.0mm_P30.48mm_Horizontal
+Resistor, Axial_DIN0617 series, Axial, Horizontal, pin pitch=30.48mm, 2W, length*diameter=17*6mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0617 series Axial Horizontal pin pitch 30.48mm 2W length 17mm diameter 6mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0918_L18.0mm_D9.0mm_P7.62mm_Vertical
+Resistor, Axial_DIN0918 series, Axial, Vertical, pin pitch=7.62mm, 4W, length*diameter=18*9mm^2
+Resistor Axial_DIN0918 series Axial Vertical pin pitch 7.62mm 4W length 18mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0918_L18.0mm_D9.0mm_P22.86mm_Horizontal
+Resistor, Axial_DIN0918 series, Axial, Horizontal, pin pitch=22.86mm, 4W, length*diameter=18*9mm^2
+Resistor Axial_DIN0918 series Axial Horizontal pin pitch 22.86mm 4W length 18mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0918 series, Axial, Horizontal, pin pitch=25.4mm, 4W, length*diameter=18*9mm^2
+Resistor Axial_DIN0918 series Axial Horizontal pin pitch 25.4mm 4W length 18mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0918_L18.0mm_D9.0mm_P30.48mm_Horizontal
+Resistor, Axial_DIN0918 series, Axial, Horizontal, pin pitch=30.48mm, 4W, length*diameter=18*9mm^2
+Resistor Axial_DIN0918 series Axial Horizontal pin pitch 30.48mm 4W length 18mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0922_L20.0mm_D9.0mm_P7.62mm_Vertical
+Resistor, Axial_DIN0922 series, Axial, Vertical, pin pitch=7.62mm, 5W, length*diameter=20*9mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0922 series Axial Vertical pin pitch 7.62mm 5W length 20mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0922_L20.0mm_D9.0mm_P25.40mm_Horizontal
+Resistor, Axial_DIN0922 series, Axial, Horizontal, pin pitch=25.4mm, 5W, length*diameter=20*9mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0922 series Axial Horizontal pin pitch 25.4mm 5W length 20mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_DIN0922_L20.0mm_D9.0mm_P30.48mm_Horizontal
+Resistor, Axial_DIN0922 series, Axial, Horizontal, pin pitch=30.48mm, 5W, length*diameter=20*9mm^2, http://www.vishay.com/docs/20128/wkxwrx.pdf
+Resistor Axial_DIN0922 series Axial Horizontal pin pitch 30.48mm 5W length 20mm diameter 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L20.0mm_W6.4mm_P5.08mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=5.08mm, 4W, length*width*height=20*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 5.08mm 4W length 20mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L20.0mm_W6.4mm_P7.62mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=7.62mm, 4W, length*width*height=20*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 7.62mm 4W length 20mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L20.0mm_W6.4mm_P22.40mm
+Resistor, Axial_Power series, Box, pin pitch=22.4mm, 4W, length*width*height=20*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 22.4mm 4W length 20mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L20.0mm_W6.4mm_P25.40mm
+Resistor, Axial_Power series, Box, pin pitch=25.4mm, 4W, length*width*height=20*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 25.4mm 4W length 20mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L20.0mm_W6.4mm_P30.48mm
+Resistor, Axial_Power series, Box, pin pitch=30.48mm, 4W, length*width*height=20*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 30.48mm 4W length 20mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W6.4mm_P27.94mm
+Resistor, Axial_Power series, Box, pin pitch=27.94mm, 5W, length*width*height=25*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 27.94mm 5W length 25mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W6.4mm_P30.48mm
+Resistor, Axial_Power series, Box, pin pitch=30.48mm, 5W, length*width*height=25*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 30.48mm 5W length 25mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W9.0mm_P7.62mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=7.62mm, 7W, length*width*height=25*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 7.62mm 7W length 25mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W9.0mm_P10.16mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=10.16mm, 7W, length*width*height=25*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 10.16mm 7W length 25mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W9.0mm_P27.94mm
+Resistor, Axial_Power series, Box, pin pitch=27.94mm, 7W, length*width*height=25*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 27.94mm 7W length 25mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L25.0mm_W9.0mm_P30.48mm
+Resistor, Axial_Power series, Box, pin pitch=30.48mm, 7W, length*width*height=25*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 30.48mm 7W length 25mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L38.0mm_W6.4mm_P40.64mm
+Resistor, Axial_Power series, Box, pin pitch=40.64mm, 7W, length*width*height=38*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 40.64mm 7W length 38mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L38.0mm_W6.4mm_P45.72mm
+Resistor, Axial_Power series, Box, pin pitch=45.72mm, 7W, length*width*height=38*6.4*6.4mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 45.72mm 7W length 38mm width 6.4mm height 6.4mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L38.0mm_W9.0mm_P40.64mm
+Resistor, Axial_Power series, Box, pin pitch=40.64mm, 9W, length*width*height=38*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 40.64mm 9W length 38mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L38.0mm_W9.0mm_P45.72mm
+Resistor, Axial_Power series, Box, pin pitch=45.72mm, 9W, length*width*height=38*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 45.72mm 9W length 38mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L48.0mm_W12.5mm_P7.62mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=7.62mm, 15W, length*width*height=48*12.5*12.5mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 7.62mm 15W length 48mm width 12.5mm height 12.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L48.0mm_W12.5mm_P10.16mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=10.16mm, 15W, length*width*height=48*12.5*12.5mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 10.16mm 15W length 48mm width 12.5mm height 12.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L48.0mm_W12.5mm_P55.88mm
+Resistor, Axial_Power series, Box, pin pitch=55.88mm, 15W, length*width*height=48*12.5*12.5mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 55.88mm 15W length 48mm width 12.5mm height 12.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L48.0mm_W12.5mm_P60.96mm
+Resistor, Axial_Power series, Box, pin pitch=60.96mm, 15W, length*width*height=48*12.5*12.5mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 60.96mm 15W length 48mm width 12.5mm height 12.5mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L50.0mm_W9.0mm_P55.88mm
+Resistor, Axial_Power series, Box, pin pitch=55.88mm, 11W, length*width*height=50*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 55.88mm 11W length 50mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L50.0mm_W9.0mm_P60.96mm
+Resistor, Axial_Power series, Box, pin pitch=60.96mm, 11W, length*width*height=50*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 60.96mm 11W length 50mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L60.0mm_W14.0mm_P10.16mm_Vertical
+Resistor, Axial_Power series, Axial, Vertical, pin pitch=10.16mm, 25W, length*width*height=60*14*14mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Axial Vertical pin pitch 10.16mm 25W length 60mm width 14mm height 14mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L60.0mm_W14.0mm_P66.04mm
+Resistor, Axial_Power series, Box, pin pitch=66.04mm, 25W, length*width*height=60*14*14mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 66.04mm 25W length 60mm width 14mm height 14mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L60.0mm_W14.0mm_P71.12mm
+Resistor, Axial_Power series, Box, pin pitch=71.12mm, 25W, length*width*height=60*14*14mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 71.12mm 25W length 60mm width 14mm height 14mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L75.0mm_W9.0mm_P81.28mm
+Resistor, Axial_Power series, Box, pin pitch=81.28mm, 17W, length*width*height=75*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 81.28mm 17W length 75mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Power_L75.0mm_W9.0mm_P86.36mm
+Resistor, Axial_Power series, Box, pin pitch=86.36mm, 17W, length*width*height=75*9*9mm^3, http://cdn-reichelt.de/documents/datenblatt/B400/5WAXIAL_9WAXIAL_11WAXIAL_17WAXIAL%23YAG.pdf
+Resistor Axial_Power series Box pin pitch 86.36mm 17W length 75mm width 9mm height 9mm
+0
+2
+2
+Resistor_THT
+R_Axial_Shunt_L22.2mm_W8.0mm_PS14.30mm_P25.40mm
+Resistor, Axial_Shunt series, Box, pin pitch=25.4mm, 3W, length*width*height=22.2*8*8mm^3, shunt pin pitch = 14.30mm, http://www.vishay.com/docs/30217/cpsl.pdf
+Resistor Axial_Shunt series Box pin pitch 25.4mm 3W length 22.2mm width 8mm height 8mm shunt pin pitch 14.30mm
 0
 4
+4
+Resistor_THT
+R_Axial_Shunt_L22.2mm_W9.5mm_PS14.30mm_P25.40mm
+Resistor, Axial_Shunt series, Box, pin pitch=25.4mm, 5W, length*width*height=22.2*9.5*9.5mm^3, shunt pin pitch = 14.30mm, http://www.vishay.com/docs/30217/cpsl.pdf
+Resistor Axial_Shunt series Box pin pitch 25.4mm 5W length 22.2mm width 9.5mm height 9.5mm shunt pin pitch 14.30mm
+0
+4
+4
+Resistor_THT
+R_Axial_Shunt_L35.3mm_W9.5mm_PS25.40mm_P38.10mm
+Resistor, Axial_Shunt series, Box, pin pitch=38.1mm, 7W, length*width*height=35.3*9.5*9.5mm^3, shunt pin pitch = 25.40mm, http://www.vishay.com/docs/30217/cpsl.pdf
+Resistor Axial_Shunt series Box pin pitch 38.1mm 7W length 35.3mm width 9.5mm height 9.5mm shunt pin pitch 25.40mm
+0
+4
+4
+Resistor_THT
+R_Axial_Shunt_L47.6mm_W9.5mm_PS34.93mm_P50.80mm
+Resistor, Axial_Shunt series, Box, pin pitch=50.8mm, 10W, length*width*height=47.6*9.5*9.5mm^3, shunt pin pitch = 34.93mm, http://www.vishay.com/docs/30217/cpsl.pdf
+Resistor Axial_Shunt series Box pin pitch 50.8mm 10W length 47.6mm width 9.5mm height 9.5mm shunt pin pitch 34.93mm
+0
+4
+4
+Resistor_THT
+R_Axial_Shunt_L47.6mm_W12.7mm_PS34.93mm_P50.80mm
+Resistor, Axial_Shunt series, Box, pin pitch=50.8mm, 15W, length*width*height=47.6*12.7*12.7mm^3, shunt pin pitch = 34.93mm, http://www.vishay.com/docs/30217/cpsl.pdf
+Resistor Axial_Shunt series Box pin pitch 50.8mm 15W length 47.6mm width 12.7mm height 12.7mm shunt pin pitch 34.93mm
+0
+4
+4
+Resistor_THT
+R_Bare_Metal_Element_L12.4mm_W4.8mm_P11.40mm
+Resistor, Bare_Metal_Element series, Bare Metal Strip/Wire, Horizontal, pin pitch=11.4mm, 1W, length*width=12.4*4.8mm^2, https://www.bourns.com/pdfs/PWR4412-2S.pdf
+Resistor Bare_Metal_Element series Bare Metal Strip Wire Horizontal pin pitch 11.4mm 1W length 12.4mm width 4.8mm 
+0
+2
+2
+Resistor_THT
+R_Bare_Metal_Element_L16.3mm_W4.8mm_P15.30mm
+Resistor, Bare_Metal_Element series, Bare Metal Strip/Wire, Horizontal, pin pitch=15.3mm, 3W, length*width=16.3*4.8mm^2, https://www.bourns.com/pdfs/PWR4412-2S.pdf
+Resistor Bare_Metal_Element series Bare Metal Strip Wire Horizontal pin pitch 15.3mm 3W length 16.3mm width 4.8mm 
+0
+2
+2
+Resistor_THT
+R_Bare_Metal_Element_L21.3mm_W4.8mm_P20.30mm
+Resistor, Bare_Metal_Element series, Bare Metal Strip/Wire, Horizontal, pin pitch=20.3mm, 5W, length*width=21.3*4.8mm^2, https://www.bourns.com/pdfs/PWR4412-2S.pdf
+Resistor Bare_Metal_Element series Bare Metal Strip Wire Horizontal pin pitch 20.3mm 5W length 21.3mm width 4.8mm 
+0
+2
+2
+Resistor_THT
+R_Box_L8.4mm_W2.5mm_P5.08mm
+Resistor, Box series, Radial, pin pitch=5.08mm, 0.5W = 1/2W, length*width=8.38*2.54mm^2, http://www.vishay.com/docs/60051/cns020.pdf
+Resistor Box series Radial pin pitch 5.08mm 0.5W = 1/2W length 8.38mm width 2.54mm
+0
+2
+2
+Resistor_THT
+R_Box_L13.0mm_W4.0mm_P9.00mm
+Resistor, Box series, Radial, pin pitch=9.00mm, 2W, length*width=13.0*4.0mm^2, http://www.produktinfo.conrad.com/datenblaetter/425000-449999/443860-da-01-de-METALLBAND_WIDERSTAND_0_1_OHM_5W_5Pr.pdf
+Resistor Box series Radial pin pitch 9.00mm 2W length 13.0mm width 4.0mm
+0
+2
+2
+Resistor_THT
+R_Box_L14.0mm_W5.0mm_P9.00mm
+Resistor, Box series, Radial, pin pitch=9.00mm, 5W, length*width=14.0*5.0mm^2, http://www.produktinfo.conrad.com/datenblaetter/425000-449999/443860-da-01-de-METALLBAND_WIDERSTAND_0_1_OHM_5W_5Pr.pdf
+Resistor Box series Radial pin pitch 9.00mm 5W length 14.0mm width 5.0mm
+0
+2
+2
+Resistor_THT
+R_Box_L26.0mm_W5.0mm_P20.00mm
+Resistor, Box series, Radial, pin pitch=20.00mm, 10W, length*width=26.0*5.0mm^2, http://www.produktinfo.conrad.com/datenblaetter/425000-449999/443860-da-01-de-METALLBAND_WIDERSTAND_0_1_OHM_5W_5Pr.pdf
+Resistor Box series Radial pin pitch 20.00mm 10W length 26.0mm width 5.0mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L7.0mm_W8.0mm_Px2.40mm_Py2.30mm
+Resistor, Radial_Power series, Radial, pin pitch=2.40*2.30mm^2, 7W, length*width=7*8mm^2, http://www.vitrohm.com/content/files/vitrohm_series_kv_-_201601.pdf
+Resistor Radial_Power series Radial pin pitch 2.40*2.30mm^2 7W length 7mm width 8mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L9.0mm_W10.0mm_Px2.70mm_Py2.30mm
+Resistor, Radial_Power series, Radial, pin pitch=2.70*2.30mm^2, 17W, length*width=9*10mm^2, http://www.vitrohm.com/content/files/vitrohm_series_kv_-_201601.pdf
+Resistor Radial_Power series Radial pin pitch 2.70*2.30mm^2 17W length 9mm width 10mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L11.0mm_W7.0mm_P5.00mm
+Resistor, Radial_Power series, Radial, pin pitch=5.00mm, 2W, length*width=11.0*7.0mm^2, http://www.vishay.com/docs/30218/cpcx.pdf
+Resistor Radial_Power series Radial pin pitch 5.00mm 2W length 11.0mm width 7.0mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L12.0mm_W8.0mm_P5.00mm
+Resistor, Radial_Power series, Radial, pin pitch=5.00mm, 3W, length*width=12.0*8.0mm^2, http://www.vishay.com/docs/30218/cpcx.pdf
+Resistor Radial_Power series Radial pin pitch 5.00mm 3W length 12.0mm width 8.0mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L13.0mm_W9.0mm_P5.00mm
+Resistor, Radial_Power series, Radial, pin pitch=5.00mm, 7W, length*width=13.0*9.0mm^2, http://www.vishay.com/docs/30218/cpcx.pdf
+Resistor Radial_Power series Radial pin pitch 5.00mm 7W length 13.0mm width 9.0mm
+0
+2
+2
+Resistor_THT
+R_Radial_Power_L16.1mm_W9.0mm_P7.37mm
+Resistor, Radial_Power series, Radial, pin pitch=7.37mm, 10W, length*width=16.1*9mm^2, http://www.vishay.com/docs/30218/cpcx.pdf
+Resistor Radial_Power series Radial pin pitch 7.37mm 10W length 16.1mm width 9mm
+0
+2
 2
