@@ -2,19 +2,20 @@
 A minimalistic industrial computer based on Hitachi 6309 (Motorola 6809).
 
 ## Purpose
-Proof of concept custom industrial computer with minimal implementation. 
+Proof of concept custom industrial computer with minimal device count implementation. Modular, low-power design, allowing easy expansion and customization per use case.
 
 ## Mainboard
 The main board contains the following:
-* CPU: Hitachi 63B09P running at 1.8MHz
+* CPU: Hitachi 63B09P running at 1.8MHz 
 * RAM: 32KB Winbond W24257A
-* ROM: 32KB Atmel 28C256 EEPROM on a ZIF socket
-* UART: Toshiba TMP6861 double-channel (up to 1MBps)
-* Address decoders: 74HCT00 and 74HCT138
+* ROM: 16KB Atmel 28C256 EEPROM on a ZIF socket
+* UART: Hitachi 63B50P (up to 1MBps) with FT23 header
+* Address decoding: 74HCT00 and 74HCT138
+* 2x20-pin expansion port with addres, data and control lines
+* Power over USB or expansion port
 
-## Memory map
-The current design has the following address space:
-|Address Range|Device|Size|
+## System memory map
+|Address range|Device|Size|
 |-------------|------|----|
 |$0000-$7FFF|RAM|32KB|
 |$8000-$8FFF|UART|4KB|
@@ -25,16 +26,14 @@ The current design has the following address space:
 
 The entire 32KB of RAM is allocated from the beginning of the address range $0000 to $7FFF.
 The ROM is allocated at the last 16KB of the address space between $C000 and $FFFF.
-The remaining 16KB of address space in the middle, $8000 to $BFFF is used for four I/O devices, each with a 4KB address space.
+The remaining 16KB of address space in the middle, $8000 to $BFFF is used for four I/O devices, each with a 4KB address space (work in progress for using only 4KB for the entire I/O).
 
 
 ## Communication
-As the computer does not have a keyboard or screen devices intended, a double UART chip is used as a built-in communication device on the mainboard:
-* UART Channel #1 used for FTDI header (for FT232) to connect to a PC via USB.
-* UART Channel #2 is used for a full speed RS-232 serial port
+As the computer does not have a keyboard or screen devices intended, a UART chip is used as a built-in communication device, coupled with a FTDI header (for FT232) to connect to a PC via USB.
 
 ## Software
-Bare metal test applications, at first. Eventually running NitrOS-9 from BIOS. The goal is to use high level C code using the CMOC project.
+Bare metal test applications at first. Eventually running NitrOS-9 from BIOS. The goal is to use high level C code.
 
 ## Toolchain
 * [AS09](https://gitlab.com/dfffffff/as09)
@@ -46,13 +45,12 @@ Bare metal test applications, at first. Eventually running NitrOS-9 from BIOS. T
 * [6809 online assembler](http://6809.uk/)
 * [XRoar](https://www.6809.org.uk/xroar/)
 * [XRoar Online](https://www.6809.org.uk/xroar/online/)
-* [SimCoupe](https://simonowen.com/simcoupe/)
 
 
 ## Future use
 Possible use cases:
-* Basis of a custom industrial computer
-* Basis of a flight control computer (ARINC429, AM9511)
+* Basis of a custom industrial controller
+* Basis of a flight control computer
 * Basis of a fictional "Pravetz-8N" computer
 * Basis of a custom gaming console (see MAME for 6309 games)
 

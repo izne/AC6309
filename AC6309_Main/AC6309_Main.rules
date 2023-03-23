@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 12128)
+    (start_pass_no 20464)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,7 +29,6 @@
     (width 250.0)
     (clear 200.2)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd-smd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -67,14 +66,10 @@
     /A5 /A4 /A3 /A2 /A1 /A0 /D0 /D1
     /D2 /D3 /D4 /D5 /D6 /D7 /A10 /A11
     /A9 /A8 /A13 "unconnected-(U3-~{WE}-Pad27)" /BA "Net-(U1-EXTAL)" "Net-(U1-XTAL)" /E
-    /Q /{slash}READ /{slash}WRITE "/{slash}ROM_CS" "unconnected-(U4-A1-Pad1)" "unconnected-(U4-IP3-Pad2)" "unconnected-(U4-A2-Pad3)" "unconnected-(U4-IP1-Pad4)"
-    "unconnected-(U4-A3-Pad5)" "unconnected-(U4-A4-Pad6)" "unconnected-(U4-IP0-Pad7)" "unconnected-(U4-RWN-Pad8)" "unconnected-(U4-DTACKN-Pad9)" "unconnected-(U4-RXDB-Pad10)" "unconnected-(U4-TXDB-Pad11)" "unconnected-(U4-OP1-Pad12)"
-    "unconnected-(U4-OP3-Pad13)" "unconnected-(U4-OP5-Pad14)" "unconnected-(U4-OP7-Pad15)" "unconnected-(U4-INTRN-Pad21)" "unconnected-(U4-OP6-Pad26)" "/8000_CS" "/9000_CS" "unconnected-(U4-OP4-Pad27)"
-    "unconnected-(U4-OP2-Pad28)" "unconnected-(U4-OP0-Pad29)" "unconnected-(U4-TXDA-Pad30)" "unconnected-(U4-RXDA-Pad31)" "Net-(U4-X1{slash}CLK)" /A15 "Net-(U4-X2)" "unconnected-(U4-RESETN-Pad34)"
-    "unconnected-(U4-CSN-Pad35)" "unconnected-(U4-IP2-Pad36)" "unconnected-(U4-IACKN-Pad37)" "unconnected-(U4-IP5-Pad38)" "unconnected-(U4-IP4-Pad39)" "Net-(U5-Pad10)" "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)"
-    "unconnected-(U6-~{Y5}-Pad10)" "unconnected-(U6-~{Y4}-Pad11)" "unconnected-(U7-C1+-Pad1)" "unconnected-(U7-VS+-Pad2)" "/A000_CS" "/B000_CS" "unconnected-(U7-C1--Pad3)" "unconnected-(U7-C2+-Pad4)"
-    "unconnected-(U7-C2--Pad5)" "unconnected-(U7-VS--Pad6)" "unconnected-(U7-T2OUT-Pad7)" "unconnected-(U7-R2IN-Pad8)" "unconnected-(U7-R2OUT-Pad9)" "unconnected-(U7-T2IN-Pad10)" "unconnected-(U7-T1IN-Pad11)" "unconnected-(U7-R1OUT-Pad12)"
-    "unconnected-(U7-R1IN-Pad13)" "unconnected-(U7-T1OUT-Pad14)" /{slash}RESET "Net-(J2-Pin_19)"
+    /Q /{slash}READ /{slash}WRITE "/{slash}ROM_CS" "/8000_CS" "/9000_CS" /A15 "Net-(U5-Pad10)"
+    "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)" "unconnected-(U6-~{Y5}-Pad10)" "unconnected-(U6-~{Y4}-Pad11)" "/A000_CS" "/B000_CS" /{slash}RESET "unconnected-(J1-Pin_20-Pad20)"
+    "unconnected-(J2-Pin_20-Pad20)" "unconnected-(J2-Pin_19-Pad19)" "unconnected-(U4-Rx_Data-Pad2)" "unconnected-(U4-Rx_CLK-Pad3)" "unconnected-(U4-Tx_CLK-Pad4)" "unconnected-(U4-~{RTS}-Pad5)" "unconnected-(U4-Tx_Data-Pad6)" "unconnected-(U4-~{IRQ}-Pad7)"
+    "unconnected-(U4-CS0-Pad8)" "unconnected-(U4-CS2-Pad9)" "unconnected-(U4-CS1-Pad10)" "unconnected-(U4-RS-Pad11)" "unconnected-(U4-~{DCD}-Pad23)" "unconnected-(U4-~{CTS}-Pad24)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
