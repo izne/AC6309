@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 20464)
+    (start_pass_no 44185)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -62,14 +62,14 @@
     )
   )
   (class "kicad_default"
-    GND VCC /R{slash}W /BS /A14 /A12 /A7 /A6
+    GND VCC /R{slash}W /{slash}NMI /A14 /A12 /A7 /A6
     /A5 /A4 /A3 /A2 /A1 /A0 /D0 /D1
     /D2 /D3 /D4 /D5 /D6 /D7 /A10 /A11
-    /A9 /A8 /A13 "unconnected-(U3-~{WE}-Pad27)" /BA "Net-(U1-EXTAL)" "Net-(U1-XTAL)" /E
+    /A9 /A8 /A13 "unconnected-(U3-~{WE}-Pad27)" /{slash}IRQ "Net-(U1-EXTAL)" "Net-(U1-XTAL)" /E
     /Q /{slash}READ /{slash}WRITE "/{slash}ROM_CS" "/8000_CS" "/9000_CS" /A15 "Net-(U5-Pad10)"
-    "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)" "unconnected-(U6-~{Y5}-Pad10)" "unconnected-(U6-~{Y4}-Pad11)" "/A000_CS" "/B000_CS" /{slash}RESET "unconnected-(J1-Pin_20-Pad20)"
-    "unconnected-(J2-Pin_20-Pad20)" "unconnected-(J2-Pin_19-Pad19)" "unconnected-(U4-Rx_Data-Pad2)" "unconnected-(U4-Rx_CLK-Pad3)" "unconnected-(U4-Tx_CLK-Pad4)" "unconnected-(U4-~{RTS}-Pad5)" "unconnected-(U4-Tx_Data-Pad6)" "unconnected-(U4-~{IRQ}-Pad7)"
-    "unconnected-(U4-CS0-Pad8)" "unconnected-(U4-CS2-Pad9)" "unconnected-(U4-CS1-Pad10)" "unconnected-(U4-RS-Pad11)" "unconnected-(U4-~{DCD}-Pad23)" "unconnected-(U4-~{CTS}-Pad24)"
+    "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)" "unconnected-(U6-~{Y5}-Pad10)" "/A000_CS" "/B000_CS" /{slash}RESET "unconnected-(J1-Pin_20-Pad20)" "unconnected-(J2-Pin_20-Pad20)"
+    "unconnected-(J2-Pin_19-Pad19)" /{slash}FIRQ /{slash}HALT "unconnected-(J3-Pin_1-Pad1)" "Net-(J3-Pin_2)" "Net-(J3-Pin_3)" "unconnected-(J3-Pin_5-Pad5)" /{slash}DMABREQ
+    /MRDY "unconnected-(U1-BS-Pad5)" "unconnected-(U1-BA-Pad6)" "Net-(U4-~{CTS})" "/C000_CS"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
