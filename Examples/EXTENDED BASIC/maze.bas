@@ -1,0 +1,3 @@
+10 I = RND(2)
+20 IF I = 1 THEN PRINT "/"; ELSE PRINT "\";
+30 GOTO 10

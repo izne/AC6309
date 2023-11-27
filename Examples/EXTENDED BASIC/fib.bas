@@ -1,0 +1,11 @@
+10 A = 0
+11 B = 0
+12 C = 0
+13 TARGET = 25
+20 FOR I = 0 TO TARGET
+30  IF I = 0 THEN C = 0
+40  IF I = 1 THEN C = 1 ELSE C = A + B
+50  PRINT C; 
+60  A = B
+70  B = C
+80 NEXT I

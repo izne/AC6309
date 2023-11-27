@@ -1,0 +1,7 @@
+10 S = 0
+20 P = 1
+30 FOR I = 1 TO 16
+40 S = 2 + SQR(S)
+50 P = P * SQR(S)/2
+60 PRINT 2/P
+70 NEXT I
