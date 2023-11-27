@@ -8,7 +8,7 @@ Proof of concept custom industrial computer with minimal device count implementa
 The main board contains the following:
 * CPU: Hitachi 63B09P running at 1.8MHz 
 * RAM: 32KB Winbond W24257A
-* ROM: 16KB Atmel 28T128 EEPROM
+* ROM: 16KB Atmel 28C128 EEPROM
 * UART: Hitachi 63B50P (1MBps) on FT23 USB Serial
 * Address decoding: 74HCT00 and 74HCT138 for 4+ devices
 * 2x20-pin expansion port with address, data and control lines
@@ -63,7 +63,7 @@ Using the combination ROM image in Intel HEX format it needs first be turned int
 > objcopy -I ihex -O binary combined.hex combined.bin
 
 Write the resulting .bin file using the specially created EEPROM programmer for AT28C-series EEPROMs. Or any other.
-> promdude.exe -wExBasROM.bin
+> promdude.exe -combined.bin
 
 As a note, burning the combined.bin (16K) onto 32K 28C256 has to be at the correct half. Optionally, a copy of combined.bin twice into the chip will do as well.
 
@@ -81,7 +81,16 @@ Main goals for the first runs of the project:
 - [x] Easy program transer via ASSIST09 Load (S19)
 - [] Use of high level C code (CMOC)
 
-
+## Hardware
+Main goals for the fabrication part:
+- [x] Breadboard prototype running
+- [] Extended addressing with 74138
+- [] PCB or Perfboard prototype
+- [] First expansion card: Toshiba UART / 2x RS232
+- [] Expansion card: SPI + Ethernet
+- [] Expansion card: SAA1099 sound
+- [] Expansion card: Am9511 numberic processor
+- [] Expansion card: ...
 
 ## Toolchain
 * [AS9](http://home.hccnet.nl/a.w.m.van.der.horst/m6809.html)
