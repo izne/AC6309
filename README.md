@@ -86,11 +86,11 @@ Main goals for the fabrication part:
 - [x] Breadboard prototype running
 - [ ] Extended addressing with 74138
 - [ ] PCB or Perfboard prototype
-- [ ] First expansion card: Toshiba UART / 2x RS232
-- [ ] Expansion card: SPI + Ethernet
+- [ ] Expansion card: TMP68681 / 2x RS232
+- [ ] Expansion card: SPI + Ethernet port (ENC28J60)
 - [ ] Expansion card: SAA1099 sound
-- [ ] Expansion card: Am9511 numberic processor
-- [ ] Expansion card: ...
+- [ ] Expansion card: Am9511 card
+- [ ] Expansion card: VGA output and PS/2 keyboard input board (with Arduino Nano)
 
 ## Toolchain
 * [AS9](http://home.hccnet.nl/a.w.m.van.der.horst/m6809.html)
