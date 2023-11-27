@@ -79,18 +79,18 @@ Main goals for the first runs of the project:
 - [x] Write basic program (asm)
 - [x] Cross-compile on host machine
 - [x] Easy program transer via ASSIST09 Load (S19)
-- [] Use of high level C code (CMOC)
+- [ ] Use of high level C code (CMOC)
 
 ## Hardware
 Main goals for the fabrication part:
 - [x] Breadboard prototype running
-- [] Extended addressing with 74138
-- [] PCB or Perfboard prototype
-- [] First expansion card: Toshiba UART / 2x RS232
-- [] Expansion card: SPI + Ethernet
-- [] Expansion card: SAA1099 sound
-- [] Expansion card: Am9511 numberic processor
-- [] Expansion card: ...
+- [ ] Extended addressing with 74138
+- [ ] PCB or Perfboard prototype
+- [ ] First expansion card: Toshiba UART / 2x RS232
+- [ ] Expansion card: SPI + Ethernet
+- [ ] Expansion card: SAA1099 sound
+- [ ] Expansion card: Am9511 numberic processor
+- [ ] Expansion card: ...
 
 ## Toolchain
 * [AS9](http://home.hccnet.nl/a.w.m.van.der.horst/m6809.html)
