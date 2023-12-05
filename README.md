@@ -44,6 +44,8 @@ The I/O mapping is temporary and to allow compatibility with existing BIOS image
 
 ### Work in progress: I/O update
 
+Currently it looks like this:
+
 |Address range|Device|Size|
 |-------------|------|----|
 |$0000-$7FFF|RAM|32KB|
@@ -53,7 +55,8 @@ The I/O mapping is temporary and to allow compatibility with existing BIOS image
 |$B000-$BFFF|Unallocated|4KB|
 |$C000-$FFFF|ROM|16KB|
 
-The I/O being split into four pieces is forming the ACIA and the 3 extension port select lines with the following addressing:
+### AC29
+The A000 I/O address being split into four pieces (another 74138) is forming the ACIA and adding 3 extension port select lines with the following addressing:
 |Address range|Device|Size|
 |-------------|------|----|
 |$A000-$A3FF|UART|1KB|
@@ -61,7 +64,7 @@ The I/O being split into four pieces is forming the ACIA and the 3 extension por
 |$A800-$ABFF|Extension port #2|1KB|
 |$AC00-$AFFF|Extension port #3|1KB|
 
-
+### AC219
 The addressing can be "A" - internal devices, "B" - external devices:
 |Address range|Device|Size|
 |-------------|------|----|
