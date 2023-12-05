@@ -5,31 +5,25 @@ A minimalistic industrial computer core, based on Motorola 6809 platform.
 Proof of concept custom industrial computer with minimal device count implementation. Modular, low-power design, allowing easy expansion and customization per use case.
 
 ## Configuration AC29
-The main board AC29 rev.1:
-* CPU: 68B09/63B09, 68C09/63C09, non-E version
-* Clock: 1.8MHz (7.3782MHz crystal)
-* RAM: W24257
-* ROM: 28C128/28C256
-* UART: 63B50 with FT23 header
-* Address decoding: 74HCT00 and 74HCT138 for 4+ devices
-* 2x20-pin expansion port with address, data and control lines
-* Power over USB or expansion port
-
-## Prototype unit
-* CPU: Hitachi HD63B09 @ 1.8MHz
-* RAM: 32KB Winbond W24257A
-* ROM: 16KB Atmel 28C256 EEPROM (one half)
-* UART: Hitachi HD63B50 (1MBps) on FT23 USB Serial
-* Address decoding: 74HCT00 and 74HCT138 for 4+ devices
-* 2x20-pin expansion port with address, data and control lines
-* Power over USB or expansion port
-
 ![AC29 Config](Images/AC29_config.PNG)
 
+## Prototype unit 
+* CPU: Hitachi HD63B09 @ 1.8MHz
+* RAM: 32KB Winbond W24257A
+* ROM: 16KB Atmel 28C256 EEPROM (half)
+* UART: Hitachi HD63B50 (1MBps) on FT23 USB Serial
+* Address decoding: 74HCT00
+* Power over USB or expansion port
+![AC29 Breadboard](Images/AC29_Breadboard.jpg)
+
+![AC29 BASIC](Images/AC29_BASIC.jpg)
+
+## Layout
 ![AC29 Layout](Images/AC29_layout.PNG)
 
 ## Dedication
 AC29 is dedicatd to my father.
+
 ![BAUS](Images/bauscii.png)
 
 ## System memory map
