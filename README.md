@@ -7,13 +7,13 @@ Proof of concept custom industrial computer with minimal device count implementa
 ## Configuration AC29
 ![AC29 Config](Images/AC29_config.PNG)
 
-## Prototype unit 
+## Prototype build 
 * CPU: Hitachi HD63B09 @ 1.8MHz
 * RAM: 32KB Winbond W24257A
 * ROM: 16KB Atmel 28C256 EEPROM (half)
 * UART: Hitachi HD63B50 (1MBps) on FT23 USB Serial
 * Address decoding: 74HCT00
-* Power over USB or expansion port
+* Power over USB
 
 ![AC29 Breadboard](Images/AC29_Breadboard.jpg)
 
@@ -23,7 +23,7 @@ Proof of concept custom industrial computer with minimal device count implementa
 ![AC29 Layout](Images/AC29_layout.PNG)
 
 ## Dedication
-AC29 is dedicatd to my father.
+AC29 is dedicated to my father.
 
 ![BAUS](Images/bauscii.png)
 
@@ -61,6 +61,27 @@ The I/O being split into four pieces is forming the ACIA and the 3 extension por
 |$A800-$ABFF|Extension port #2|1KB|
 |$AC00-$AFFF|Extension port #3|1KB|
 
+
+The addressing can be "A" - internal devices, "B" - external devices:
+|Address range|Device|Size|
+|-------------|------|----|
+|$A000-$A3FF|UART|1KB|
+|$A400-$A7FF|Internal device #1|1KB|
+|$A800-$ABFF|Internal device #2|1KB|
+|$AC00-$AFFF|Internal device #3|1KB|
+
+|Address range|Device|Size|
+|-------------|------|----|
+|$B000-$B3FF|Extension port #1|1KB|
+|$B400-$B7FF|Extension port #2|1KB|
+|$B800-$BBFF|Extension port #3|1KB|
+|$BC00-$BFFF|Extension port #4|1KB|
+
+For even more external devices:
+$8000-$8FFF - another 4 ports
+$9000-$9FFF - and another 4 ports
+
+
 ## Decoding logic and CS lines
 ROM: When ROM_CS is LOW (active low). The signal is produced by one NAND gate fed with A14 and A15 lines.
 
@@ -97,7 +118,7 @@ Main goals for the fabrication part:
 - [x] Breadboard prototype running
 - [ ] Extended addressing with 74138
 - [ ] PCB or Perfboard prototype
-- [ ] Expansion card: TMP68681 / 2x RS232
+- [ ] Expansion card: TMP68681 (2x6350) / 2x RS232
 - [ ] Expansion card: SPI + Ethernet port (ENC28J60)
 - [ ] Expansion card: SAA1099 sound
 - [ ] Expansion card: Am9511 card
@@ -114,14 +135,6 @@ Main goals for the fabrication part:
 * [6809 online assembler](http://6809.uk/)
 * [XRoar](https://www.6809.org.uk/xroar/online/)
 
-
-## Example applications
-Possible use cases:
-* Basis of a custom industrial controller
-* Basis of a flight control computer
-* Basis of a fictional "Pravetz-8N" computer
-* Basis of CoCo/Dragon/others
-* Basis of a gaming console (see MAME 6309 games)
 
 
 - - - 
