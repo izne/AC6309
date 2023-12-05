@@ -14,6 +14,7 @@ Proof of concept custom industrial computer with minimal device count implementa
 * UART: Hitachi HD63B50 (1MBps) on FT23 USB Serial
 * Address decoding: 74HCT00
 * Power over USB or expansion port
+
 ![AC29 Breadboard](Images/AC29_Breadboard.jpg)
 
 ![AC29 BASIC](Images/AC29_BASIC.jpg)

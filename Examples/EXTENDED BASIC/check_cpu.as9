@@ -1,4 +1,0 @@
-CHK309  PSHS    D               ; Save Reg-D
-        FDB     $1043           ; 6309 COMD instruction (COMA on 6809)
-        CMPB    1,S             ; not equal if 6309
-        PULS    D,PC            ; exit, restoring D
