@@ -23,7 +23,7 @@ Proof of concept custom industrial computer with minimal device count implementa
 ![AC29 Layout](Images/AC29_layout.PNG)
 
 ## Dedication
-AC29 is dedicated to my father.
+AC29 is dedicated to my beloved father.
 
 ![BAUS](Images/bauscii.png)
 
@@ -139,7 +139,6 @@ Main goals for the fabrication part:
 * [XRoar](https://www.6809.org.uk/xroar/online/)
 
 
-
 - - - 
 #### Prerequisites
 The schematics and PCB design is made with [KiCad](http://kicad.org)
@@ -151,3 +150,21 @@ The schematics and PCB design is made with [KiCad](http://kicad.org)
 * [HB6809 by Lindoran](https://github.com/lindoran/HB6809)
 * [OMEN Kilo](https://github.com/omenmicro/kilo)
 * [Chip Labels by Grant Searle](http://searle.x10host.com/labels/ChipLabels.pdf)
+
+### Some great oldschool books:
+
+* [![6809 Assembly Programming](Images/book_6809_programming.PNG)](https://colorcomputerarchive.com/repo/Documents/Books/6809%20Assembly%20Language%20Programming%20(Lance%20Leventhal).pdf)
+
+
+* [![6809 Assembly Subroutines](Images/book_6809_subroutines.PNG)](https://colorcomputerarchive.com/repo/Documents/Books/6809%20Assembly%20Language%20Subroutines%20(Lance%20Leventhal).pdf)
+
+* [![6809 Microcomputer Programming and Interfacing with Experiments](Images/book_6809_experiments.PNG)](https://colorcomputerarchive.com/repo/Documents/Books/6809%20Microcomputer%20Programming%20and%20Interfacing%20with%20Experiments%20(Andrew%20C.%20Staugaard%20Jr.).pdf)
+
+* [![Programming the 6809](Images/book_6809_programming_the.PNG)](https://colorcomputerarchive.com/repo/Documents/Books/Programming%20the%206809%20(Rodney%20Zaks%20and%20William%20Labiak).pdf)
+
+* [The 6309 Book](https://colorcomputerarchive.com/repo/Documents/Books/The%206309%20Book%20(Burke%20&%20Burke).pdf)
+
+
+https://colorcomputerarchive.com/repo/Documents/Books/Programming%20the%206809%20(Rodney%20Zaks%20and%20William%20Labiak).pdf
+
+https://www.chibiakumas.com/6809/
