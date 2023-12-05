@@ -1,18 +1,36 @@
 # AC6309
-A minimalistic industrial computer based on Hitachi 6309 (Motorola 6809).
+A minimalistic industrial computer core, based on Motorola 6809 platform.
 
 ## Purpose
 Proof of concept custom industrial computer with minimal device count implementation. Modular, low-power design, allowing easy expansion and customization per use case.
 
-## Main board
-The main board contains the following:
-* CPU: Hitachi 63B09P running at 1.8MHz 
-* RAM: 32KB Winbond W24257A
-* ROM: 16KB Atmel 28C128 EEPROM
-* UART: Hitachi 63B50P (1MBps) on FT23 USB Serial
+## Configuration AC29
+The main board AC29 rev.1:
+* CPU: 68B09/63B09, 68C09/63C09, non-E version
+* Clock: 1.8MHz (7.3782MHz crystal)
+* RAM: W24257
+* ROM: 28C128/28C256
+* UART: 63B50 with FT23 header
 * Address decoding: 74HCT00 and 74HCT138 for 4+ devices
 * 2x20-pin expansion port with address, data and control lines
 * Power over USB or expansion port
+
+## Prototype unit
+* CPU: Hitachi HD63B09 @ 1.8MHz
+* RAM: 32KB Winbond W24257A
+* ROM: 16KB Atmel 28C256 EEPROM (one half)
+* UART: Hitachi HD63B50 (1MBps) on FT23 USB Serial
+* Address decoding: 74HCT00 and 74HCT138 for 4+ devices
+* 2x20-pin expansion port with address, data and control lines
+* Power over USB or expansion port
+
+![AC29 Config](Images/AC29_config.PNG)
+
+![AC29 Layout](Images/AC29_layout.PNG)
+
+## Dedication
+AC29 is dedicatd to my father.
+![BAUS](Images/bauscii.png)
 
 ## System memory map
 |Address range|Device|Size|
@@ -56,8 +74,6 @@ RAM: When A15 signal is LOW (the second half (16KBytes) of the address space).
 ACIA: Using A13, A14 and A15 for the CS0, CS1 and CS2 registers respectively.
 
 
-
-
 ## Writing the ROM image
 Using the combination ROM image in Intel HEX format it needs first be turned into a binary image to be written to the EEPROM.
 > objcopy -I ihex -O binary combined.hex combined.bin
@@ -93,7 +109,7 @@ Main goals for the fabrication part:
 - [ ] Expansion card: VGA output and PS/2 keyboard input board (with Arduino Nano)
 
 ## Toolchain
-* [AS9](http://home.hccnet.nl/a.w.m.van.der.horst/m6809.html)
+* [A09](https://github.com/Arakula/A09)
 * [AS09](https://gitlab.com/dfffffff/as09)
 * [LWTOOLS-4.20](http://www.lwtools.ca/)
 * [CMOC](http://perso.b2b2c.ca/~sarrazip/dev/cmoc.html)
@@ -104,12 +120,13 @@ Main goals for the fabrication part:
 * [XRoar](https://www.6809.org.uk/xroar/online/)
 
 
-## Future use
+## Example applications
 Possible use cases:
 * Basis of a custom industrial controller
 * Basis of a flight control computer
 * Basis of a fictional "Pravetz-8N" computer
-* Basis of a custom gaming console (see MAME for 6309 games)
+* Basis of CoCo/Dragon/others
+* Basis of a gaming console (see MAME 6309 games)
 
 
 - - - 

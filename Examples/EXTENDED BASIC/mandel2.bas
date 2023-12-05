@@ -5,7 +5,7 @@
   140 REM Permission to use/abuse anywhere for any purpose granted, but
   150 REM it comes with no warranty whatsoever. Good luck!
   160 REM
-  170 C$ = ".,'~=+:;[/<&?oxOX# " : REM 'Pallet' Lightest to darkest...
+  170 C$ = ".,'-=+:;[/<&?oxOX# " : REM 'Pallet' Lightest to darkest...
   180 SO = 1 : REM Set to 0 if your MID$() indexes from 0.
   190 MI = LEN(C$)
   200 MX = 4
@@ -13,8 +13,8 @@
   220 TP = 1.25
   230 XS = 2.5
   240 YS = -2.5
-  250 W = 64
-  260 H = 48
+  250 W = 78
+  260 H = 78
   270 SX = XS / W
   280 SY = YS / H
   290 Q = TIME
@@ -41,3 +41,4 @@
   500 PRINT
   510 PRINT (TIME - Q) / 100
   520 END
+  RUN
