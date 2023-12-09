@@ -22,6 +22,12 @@ Proof of concept custom industrial computer with minimal device count implementa
 ## Layout
 ![AC29 Layout](Images/AC29_layout.PNG)
 
+## PCB Updates
+The design of the PCB is work in progress and below are some current images:
+![AC29 PCB](Renders/PCB.png)
+![AC29 TOP](Renders/TOP.png)
+![AC29 BTM](Renders/BTM.png)
+
 ## Dedication
 AC29 is dedicated to my beloved father.
 
