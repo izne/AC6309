@@ -1,10 +1,3 @@
-  100 REM A BASIC, ASCII MANDELBROT
-  110 REM
-  120 REM This implementation copyright (c) 2019, Gordon Henderson
-  130 REM
-  140 REM Permission to use/abuse anywhere for any purpose granted, but
-  150 REM it comes with no warranty whatsoever. Good luck!
-  160 REM
   170 C$ = ".,'-=+:;[/<&?oxOX# " : REM 'Pallet' Lightest to darkest...
   180 SO = 1 : REM Set to 0 if your MID$() indexes from 0.
   190 MI = LEN(C$)

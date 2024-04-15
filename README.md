@@ -23,7 +23,7 @@ Proof of concept custom industrial computer with minimal device count implementa
 ![AC29 Layout](Images/AC29_layout.PNG)
 
 ## PCB Updates
-The design of the PCB is work in progress and below are some current images:
+Current state of PCB design:
 ![AC29 PCB](Renders/PCB.png)
 ![AC29 TOP](Renders/TOP.png)
 ![AC29 BTM](Renders/BTM.png)
@@ -126,12 +126,15 @@ Main goals for the first runs of the project:
 Main goals for the fabrication part:
 - [x] Breadboard prototype running
 - [ ] Extended addressing with 74138
-- [ ] PCB or Perfboard prototype
+- [ ] Expansion board with easy coupling
+- [ ] Revision 1 completion and PCB fabrication
 - [ ] Expansion card: TMP68681 (2x6350) / 2x RS232
-- [ ] Expansion card: SPI + Ethernet port (ENC28J60)
-- [ ] Expansion card: SAA1099 sound
+- [ ] Expansion card: Ethernet adapter (ENC28J60)
+- [ ] Expansion card: SAA1099+amp audio interface
 - [ ] Expansion card: Am9511 card
-- [ ] Expansion card: VGA output and PS/2 keyboard input board (with Arduino Nano)
+- [ ] Expansion card: Tape interface
+- [ ] Expansion card: VGA and PS/2 (Arduino)
+- [ ] Expansion card: VGA and PS/2 (MC6845/HD6321)
 
 ## Toolchain
 * [A09](https://github.com/Arakula/A09)

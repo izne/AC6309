@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 44185)
+    (start_pass_no 28955)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -26,9 +26,13 @@
     )
   )
   (rule
-    (width 250.0)
-    (clear 200.2)
-    (clear 125.0 (type smd_to_turn_gap))
+    (width 300.0)
+    (clearance 200.2)
+    (clearance 125.0 (type smd_to_turn_gap))
+    (clearance 200.2 (type smd))
+    (clearance 200.2 (type "kicad_default"))
+    (clearance 200.2 (type PWR))
+    (clearance 200.2 (type kicad))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -40,10 +44,22 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_800:400_um-Signal" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-PWR" "Via[0-1]_800:400_um" PWR
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    Signal "Via[0-1]_800:400_um-Signal"
+  )
+  (via_rule
+    PWR "Via[0-1]_800:400_um-PWR"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -55,7 +71,7 @@
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 250.0)
+      (width 300.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
@@ -66,14 +82,34 @@
     /A5 /A4 /A3 /A2 /A1 /A0 /D0 /D1
     /D2 /D3 /D4 /D5 /D6 /D7 /A10 /A11
     /A9 /A8 /A13 "unconnected-(U3-~{WE}-Pad27)" /{slash}IRQ "Net-(U1-EXTAL)" "Net-(U1-XTAL)" /E
-    /Q /{slash}READ /{slash}WRITE "/{slash}ROM_CS" "/8000_CS" "/9000_CS" /A15 "Net-(U5-Pad10)"
-    "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)" "unconnected-(U6-~{Y5}-Pad10)" "/A000_CS" "/B000_CS" /{slash}RESET "unconnected-(J1-Pin_20-Pad20)" "unconnected-(J2-Pin_20-Pad20)"
-    "unconnected-(J2-Pin_19-Pad19)" /{slash}FIRQ /{slash}HALT "unconnected-(J3-Pin_1-Pad1)" "Net-(J3-Pin_2)" "Net-(J3-Pin_3)" "unconnected-(J3-Pin_5-Pad5)" /{slash}DMABREQ
-    /MRDY "unconnected-(U1-BS-Pad5)" "unconnected-(U1-BA-Pad6)" "Net-(U4-~{CTS})" "/C000_CS"
+    /Q /{slash}READ /{slash}WRITE "/{slash}ROM_CS" "/{slash}8000_CS" "/{slash}9000_CS" /A15 "Net-(U5-Pad10)"
+    "unconnected-(U6-~{Y7}-Pad7)" "unconnected-(U6-~{Y6}-Pad9)" "/{slash}B000_CS" /{slash}RESET /{slash}FIRQ /{slash}HALT "unconnected-(J3-Pin_1-Pad1)" "unconnected-(J3-Pin_5-Pad5)"
+    /{slash}DMABREQ "unconnected-(U1-BS-Pad5)" "unconnected-(U1-BA-Pad6)" "Net-(U4-~{CTS})" "/{slash}C000_CS_ROM" "/{slash}A000_CS_ACIA" "unconnected-(J4-Pin_19-Pad19)" "unconnected-(J4-Pin_39-Pad39)"
+    "unconnected-(J4-Pin_20-Pad20)" "unconnected-(J4-Pin_40-Pad40)" "unconnected-(RN1-R8-Pad9)" "unconnected-(U6-~{Y5}-Pad10)" "/ACIA_TX" "/ACIA_RX" "unconnected-(RN1-R7-Pad8)" "unconnected-(U1-MRDY-Pad36)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
-      (width 250.0)
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Signal
+    (clearance_class default)
+    (via_rule Signal)
+    (rule
+      (width 300.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
