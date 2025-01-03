@@ -9,7 +9,7 @@
 ; Compile:
 ; asm6809 -3 -S -v -o ac29fw.s19 ac29fw.asm
 
-		 ORG     $1100
+        ORG     $1100
 D_CPU	RMB 1
 ACIA_C  EQU $A000
 ACIA_D  EQU $A001
@@ -22,15 +22,16 @@ Start
         JSR     PrintMsg
         LDX     #CopyMsg
         JSR     PrintMsg
+		JSR		ZeroMem
 		JSR		ChkCPU
         JSR     PrintCPU
 Ending  SWI
-                                ; Check if 6309
+
 ChkCPU
         LDA     #8              ; Assume 6809 at start
         STA     D_CPU           ; Store 8 to indicate 6809
         TFR     CC,DP           ; TFR CC,DP is valid only on 6309, illegal on 6809
-        BCS     Is6809          ; Branch if illegal instruction (6809)
+        BCS     Is6809          ; Branch if illegal instruction
 
 Is6309
         LDA     #3
@@ -40,12 +41,23 @@ Is6809
 EndChkCPU
         RTS
 
+ZeroMem
+        LDA     #0
+        LDX     #$0000          ; Start address of the memory to zero
+        LDY     #$1000          ; End address of the memory to zero (exclusive)
+ZeroLoop
+        STA     ,X+             ; Store 0 in the memory pointed by X and increment X
+        CMPX    Y               ; Compare X with Y
+        BNE     ZeroLoop        ; Loop back if X is not equal to Y
+EndZeroMem
+        RTS                     ; Return from subroutine
+
 PrintCPU
-        LDX     #CPU_MSG        ; Point X to the start of the "CPU Type:" message
-        JSR     PrintMsg        ; Print the "CPU Type:" message
-        LDX     #MSG_6809       ; Default to 6809 message
+        LDX     #CPU_MSG        ; Point X to the start of the message
+        JSR     PrintMsg        ; Print the CPU message
+        LDX     #MSG_6809       ; Defaults to 6809
         LDA     D_CPU           ; Load the CPU type value
-        CMPA    #3              ; Compare it to 3 (6309)
+        CMPA    #3              ; Compare it to 3
         BEQ     Print6309       ; If 3, change pointer to 6309 message
         BRA     PrintMsg        ; Jump to print message loop
 
@@ -71,7 +83,7 @@ Delay_Loop
 
 CPU_MSG  FCC    "CPU: ",0
 RAM_MSG  FCC    "RAM: ",0
-MSG_6309 FCC    "Hitachi 6309", $0A, $0D, 0
-MSG_6809 FCC    "Motorola 6809", $0A, $0D, 0
-BootMsg  FCC    "AC6309/AC29, Rev. 1", $0A, $0D, 0
+MSG_6309 FCC    "Hitachi HD6309", $0A, $0D, 0
+MSG_6809 FCC    "Motorola MC6809", $0A, $0D, 0
+BootMsg  FCC    "AC6309/29, Rev. 1", $0A, $0D, 0
 CopyMsg  FCC    "(c) 2023 Dimitar Angelov", $0A, $0D, 0

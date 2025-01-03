@@ -56,7 +56,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "starved_thermal|101290000|92725000|1c2da5af-609d-433d-8844-f5a7f8fa3fd2|ade75c1e-38d0-4de6-ba3c-c9fa6428e37a|B.Cu",
+        "starved_thermal|117482726|53848677|0267f52f-ebb8-49a7-afa8-060d018cf7a0|363dc951-e7ff-4579-a41e-93e04ce52a76|F.Cu",
+        "starved_thermal|139325000|53400000|1c2da5af-609d-433d-8844-f5a7f8fa3fd2|b0264326-e596-41c2-a0cb-5693f6009b25|B.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -176,7 +180,7 @@
       ],
       "track_widths": [
         0.0,
-        0.2,
+        0.3,
         0.4
       ],
       "via_dimensions": [
@@ -445,7 +449,7 @@
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
+        "track_width": 0.7,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
