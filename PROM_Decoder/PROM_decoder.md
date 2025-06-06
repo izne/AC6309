@@ -1,7 +1,7 @@
 # AC6309 PROM-based address decoder
-overview
 
 ## Purpose
+To replace the two 74-based devices that form the address decoder in revision 1 of the board, with a single small PROM reducing the chip count and improving flexibility and manufacturing.
 
 ## How it works
 The 28C16 EEPROM (128x8) functions as an address decoder, mapping the CPU’s 16-bit address space ($0000–$FFFF) to specific memory regions using 7 inputs (A14, A13, A12, A11, A10, E, /RW) to generate 8 active-low chip select signals (/RAM_RD, /RAM_WR, /EXT1A_CS, /EXT1B_CS, /EXT2A_CS, /EXT2B_CS, /UART_CS, /ROM_CS). Each input combination, corresponds to a byte in the EEPROM, programmed with the script’s logic to activate the appropriate chip select based on the address range.
@@ -12,28 +12,31 @@ For example, /RAM_RD activates for $0000–$7FFF reads (A14=0, A13=0, E=1, /RW=1
 - E Clock Integration - Gates all outputs with the E clock, preventing spurious activations during invalid bus cycles
 - Active-Low Outputs - Inverts all chip select signals using not_() function
 - No Address Conflicts - Each memory region is uniquely decoded with no overlaps
-Proper /RW Handling; RAM correctly distinguishes read vs write operations
+- Proper /RW Handling - RAM correctly distinguishes read vs write operations
 
-### Mapping
-28C16 Pinout (Unchanged)
-Inputs:
-A0 (pin 1): /RW
-A1 (pin 2): E
-A2 (pin 3): A10
-A3 (pin 4): A11
-A4 (pin 5): A12
-A5 (pin 6): A13
-A6 (pin 7): A14
-A7–A10 (pins 8, 9, 11, 23): GND
-Outputs:
-D7 (pin 21): /RAM_RD
-D6 (pin 20): /RAM_WR
-D5 (pin 19): /EXT1A_CS
-D4 (pin 17): /EXT1B_CS
-D3 (pin 16): /EXT2A_CS
-D2 (pin 15): /EXT2B_CS
-D1 (pin 14): /UART_CS
-D0 (pin 13): /ROM_CS
+
+### Mapping of 28C16 pins
+|Name|Pin|Input|
+|----|---|-----|
+|/RW|1|A0|
+|E|2|A1|
+|A10|3|A2|
+|A11|4|A3|
+|A12|5|A4|
+|A13|6|A5|
+|A14|7|A6|
+|GND|8, 9, 11, 23|A7–A10|
+
+|Name|Pin|Output|
+|----|---|-----|
+|D7|21|/RAM_RD|
+|D6|20|/RAM_WR|
+|D5|19|/EXT1A_CS|
+|D4|17|/EXT1B_CS|
+|D3|16|/EXT2A_CS|
+|D2|15|/EXT2B_CS|
+|D1|14|/UART_CS|
+|D0|13|/ROM_CS|
 
 ### Output Logic
 - RAM (32KB): $0000 - $7FFF - Splits read/write based on /RW signal
