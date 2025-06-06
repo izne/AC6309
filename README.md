@@ -13,9 +13,9 @@ AC29 is dedicated to my beloved father.
 ![AC29 Config](Images/AC29_config.PNG)
 
 ## Prototype build 
-* CPU: HD63B09 @ 1.8MHz
+* CPU: HD63B09 @ 1.8432MHz
 * RAM: 32KB W24257A
-* ROM: 16KB 28C256 (half of it)
+* ROM: 8KB 28C256 (2x ROMs)
 * UART: HD63B50 (1MBps) on FT23 USB Serial
 * Address decoding: 74HCT00 & 74HCT138
 * Expansion: 1x 40-pin header for expansion board with 3 slots mapped at $8000, $9000 and $B000
@@ -45,7 +45,7 @@ Current state of PCB design:
 |$C000-$FFFF|ROM|16KB|
 
 The 32KB of RAM is allocated from the bottom of the address range $0000 to $7FFF.
-The ROM is allocated at top 16KB of the address space starting $C000 to $FFFF.
+The ROM is allocated at top 8KB of the address space starting $C000 to $DFFF.
 
 The I/O mapping is allowing compatibility with existing BIOS images having ACIA on address 0xA000. 
 
@@ -55,15 +55,15 @@ Using the combination ROM image in Intel HEX format it needs first be turned int
 > objcopy -I ihex -O binary combined.hex combined.bin
 
 Write the resulting .bin file using the specially created EEPROM programmer for AT28C-series EEPROMs. Or any other.
-> promdude.exe -combined.bin
+> promdude.exe -f combined.bin
 
 As a note, burning the combined.bin (16K) onto 32K 28C256 has to be at the correct half. Optionally, a copy of combined.bin twice into the chip will do as well.
 
 ## ROM switching
-As the firmware is 16K and 28C256 (32K) chips are nowadays more accesible, two firmware images could be stored in the full 32K capacity of the chip. A ROM switching key to be implemented on the board, to switch the higher or lower part of the chip to be "visible" (A15) at boot.
+As the firmware is 16K and 28C256 (32K) chips are nowadays more accesible, two firmware images could be stored in the full 32K capacity of the chip. A ROM switching key to be implemented on the board, to switch the higher or lower part of the chip to be "visible" (A14) at boot.
 
 ## Communication
-The system communicates with a terminal via USB serial connection using the included ACIA device and its UART capability, coupled with an FT23 header. Terminal serial port settings: 115200 baud, 8n1, no hardware handshake.
+The system communicates with a terminal via USB serial connection using the included ACIA device and its UART capability, coupled with an FTDI232 header. Terminal serial port settings: 115200 baud, 8n1, no hardware handshake yet.
 
 ## Software checklist
 - [x] Run ASSIST09 and Extended BASIC
@@ -89,6 +89,7 @@ The system communicates with a terminal via USB serial connection using the incl
 - [ ] Expansion card: Keyboard controller (XT, AT, PS/2, USB)
 
 ## Toolchain
+* [ASM6809](https://www.6809.org.uk/asm6809/doc/asm6809.shtml)
 * [A09](https://github.com/Arakula/A09)
 * [AS09](https://gitlab.com/dfffffff/as09)
 * [LWTOOLS-4.20](http://www.lwtools.ca/)
