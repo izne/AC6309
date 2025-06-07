@@ -1,100 +1,83 @@
-# AC6309 PROM-based address decoder
+# AC6309 Address Decoder EEPROM Programming Script
 
-## Purpose
-To replace the two 74-based devices that form the address decoder in revision 1 of the board, with a single small PROM reducing the chip count and improving flexibility and manufacturing.
+This script generates a truth table and a binary file (`ac6309_decoder.bin`) for programming an AT28C64 EEPROM (8Kx8) to serve as an address decoder for the AC6309 single board computer. The EEPROM provides active-low chip select signals for various internal devices and expansion slots based on the upper address lines (A15–A8).
 
-## How it works
-The 28C16 EEPROM (128x8) functions as an address decoder, mapping the CPU’s 16-bit address space ($0000–$FFFF) to specific memory regions using 7 inputs (A15, A14, A13, A12, A11, E, /RW) to generate 8 active-low chip select signals (/RAM_RD, /RAM_WR, /EXT1A_CS, /EXT1B_CS, /EXT2A_CS, /EXT2B_CS, /UART_CS, /ROM_CS). Each input combination, corresponds to a byte in the EEPROM, programmed with the script’s logic to activate the appropriate chip select based on the address range.
+## Memory Map
 
-For example, /RAM_RD activates for $0000–$7FFF reads (A15=0, E=1, /RW=1), outputting 0x7F, while /EXT1A_CS activates for $8000–$83FF (A15=1, A14=0, A13=0, A12=0, A11=0, E=1), outputting 0xDF. The script generates these 128 bytes, stored in decode.bin, which are loaded into the 28C16 to enable precise memory region selection during CPU operation.
+- **0000–7FFF**: 32K RAM (handled by 7400 logic, not controlled by the EEPROM)
+- **8000–9FFF**: Unmapped space (not decoded by the EEPROM)
+- **A000–A0FF**: UART_CS (internal UART device)
+- **A100–A1FF**: PIA_CS (internal PIA device)
+- **A200–A2FF**: INT2_CS (internal interrupt 2 device)
+- **A300–A3FF**: INT3_CS (internal interrupt 3 device)
+- **B000–B0FF**: EXT1_CS (expansion slot 1)
+- **B100–B1FF**: EXT2_CS (expansion slot 2)
+- **B200–B2FF**: EXT3_CS (expansion slot 3)
+- **B300–B3FF**: EXT4_CS (expansion slot 4)
+- **C000–FFFF**: 16K ROM (handled by 7400 logic, not controlled by the EEPROM)
 
-### Key features
-- E Clock Integration - Gates all outputs with the E clock, preventing spurious activations during invalid bus cycles
-- Active-Low Outputs - Inverts all chip select signals using not_() function
-- No Address Conflicts - Each memory region is uniquely decoded with no overlaps
-- Proper /RW Handling - RAM correctly distinguishes read vs write operations
+The EEPROM's 8K address space (0x0000–0x1FFF) is used to generate chip select outputs for the A000–B3FF range, with each 256-byte block (e.g., A000–A0FF) producing identical output patterns.
 
+## EEPROM AT28C64 DIP28 Pin Mapping
 
-### Mapping of 28C16 pins
-|Name|Pin|Input|
-|----|---|-----|
-|/RW|1|A0|
-|E|2|A1|
-|A11|3|A2|
-|A12|4|A3|
-|A13|5|A4|
-|A14|6|A5|
-|A15|7|A6|
-|GND|8, 9, 11, 23|A7–A10|
+### Inputs (A15–A8)
+- A0 (pin 2): A8
+- A1 (pin 3): A9
+- A2 (pin 4): A10
+- A3 (pin 5): A11
+- A4 (pin 6): A12
+- A5 (pin 7): A13
+- A6 (pin 8): A14
+- A7 (pin 9): A15
+- A8–A12 (pins 10–14): Tied to ground (not used)
 
-|Name|Pin|Output|
-|----|---|-----|
-|D7|21|/RAM_RD|
-|D6|20|/RAM_WR|
-|D5|19|/EXT1A_CS|
-|D4|17|/EXT1B_CS|
-|D3|16|/EXT2A_CS|
-|D2|15|/EXT2B_CS|
-|D1|14|/UART_CS|
-|D0|13|/ROM_CS|
+### Outputs (Active-Low Chip Selects)
+- D7 (pin 23): /UART_CS
+- D6 (pin 22): /PIA_CS
+- D5 (pin 21): /INT2_CS
+- D4 (pin 20): /INT3_CS
+- D3 (pin 19): /EXT1_CS
+- D2 (pin 1): /EXT2_CS
+- D1 (pin 28): /EXT3_CS
+- D0 (pin 27): /EXT4_CS
 
-### Output Logic
-- RAM (32KB): $0000 - $7FFF - Splits read/write based on /RW signal
-- EXT1A: $8000 - $83FF (1KB)
-- EXT1B: $8400 - $87FF (1KB)
-- EXT2A: $9000 - $93FF (1KB)
-- EXT2B: $9400 - $95FF (512B) - Uses A10=0 for partial decode
-- UART: $A000 - $AFFF (4KB) - Onboard I/O space
-- ROM: $C000 - $FFFF (16KB)
+## Script Functionality
 
+### Purpose
+The script generates:
+- A truth table displaying the first address of each 256-byte block where the EEPROM controls a device.
+- A binary file (`ac6309_decoder.bin`) containing 8192 bytes (8K) of data to program the AT28C64 EEPROM.
+
+### Logic
+- The script iterates over the EEPROM's 8K address space (0x0000–0x1FFF), extracting A15–A8 bits.
+- Chip select outputs are calculated using AND logic based on A15–A8 bit patterns for each 256-byte region (e.g., A000–A0FF for /UART_CS).
+- The lower 8 bits (A7–A0) do not affect the EEPROM output, as the chip select remains constant within each 256-byte block.
+- Outputs are inverted to active-low and stored in the binary file.
+
+### Output
+- **Truth Table**: Displays the address, device name, range, and active-low chip select states for the first address of each controlled region (A000, A100, etc.).
+- **Binary File**: `ac6309_decoder.bin` contains 8192 bytes, with each byte representing the inverted chip select pattern for the corresponding 256-byte block in the 6809 address space.
+
+### Notes
+- Each 256-byte block (e.g., A000–A0FF) has identical EEPROM outputs, determined by the A15–A8 bits.
+- Regions 0000–7FFF (RAM) and C000–FFFF (ROM) are handled by 7400 logic and marked as "not EEPROM-controlled" in the output.
+- The unmapped space (8000–9FFF) is also noted but not actively decoded by the EEPROM.
+
+## Usage
+1. Run the script: `python script_name.py`
+2. Check the console for the truth table output.
+3. Use the generated `ac6309_decoder.bin` file to program an PROM of the decoder.
+
+## Example Output
 ``` python
-    RAM_RD = and_(not_(A15), not_(A14), not_(A13), not_(A12), not_(A11), E, RW)        # $0000-$7FFF R
-    RAM_WR = and_(not_(A15), not_(A14), not_(A13), not_(A12), not_(A11), E, not_(RW))  # $0000-$7FFF W
-    EXT1A_CS = and_(A15, not_(A14), not_(A13), not_(A12), not_(A11), E)                # $8000-$83FF
-    EXT1B_CS = and_(A15, not_(A14), not_(A13), not_(A12), A11, E)                      # $8400-$87FF
-    EXT2A_CS = and_(A15, not_(A14), not_(A13), A12, not_(A11), E)                      # $9000-$93FF
-    EXT2B_CS = and_(A15, not_(A14), not_(A13), A12, A11, E)                            # $9400-$97FF
-    UART_CS = and_(A15, not_(A14), A13, not_(A12), not_(A11), E)                       # $A000-$A7FF
-    ROM_CS = and_(A15, A14, E)                                                         # $C000-$FFFF
+Address  Device       Range           | /UART_CS /PIA_CS  /INT2_CS /INT3_CS /EXT1_CS /EXT2_CS /EXT3_CS /EXT4_CS
+---------------------------------------------------------------------------------------------------------------
+$A000    UART         A000-A0FF       |        0        1        1        1        1        1        1        1
+$A100    PIA          A100-A1FF       |        1        0        1        1        1        1        1        1
+$A200    INT2         A200-A2FF       |        1        1        0        1        1        1        1        1
+$A300    INT3         A300-A3FF       |        1        1        1        0        1        1        1        1
+$B000    EXT1         B000-B0FF       |        1        1        1        1        0        1        1        1
+$B100    EXT2         B100-B1FF       |        1        1        1        1        1        0        1        1
+$B200    EXT3         B200-B2FF       |        1        1        1        1        1        1        0        1
+$B300    EXT4         B300-B3FF       |        1        1        1        1        1        1        1        0
 ```
-
-### Output truth table
-``` ruby
-Addr    Region        A15 A14 A13 A12 A11 E   /RW |/RAM_RD   /RAM_WR   /EXT1A_CS /EXT1B_CS /EXT2A_CS /EXT2B_CS /UART_CS  /ROM_CS   
------------------------------------------------------------------------------------------------------------------------------------
-0x02    $0000-$7FFF W    0   0   0   0   0   1   0|         1         0         1         1         1         1         1         1
-0x03    $0000-$7FFF R    0   0   0   0   0   1   1|         0         1         1         1         1         1         1         1
-0x42    $8000-$83FF      1   0   0   0   0   1   0|         1         1         0         1         1         1         1         1
-0x43    $8000-$83FF      1   0   0   0   0   1   1|         1         1         0         1         1         1         1         1
-0x46    $8400-$87FF      1   0   0   0   1   1   0|         1         1         1         0         1         1         1         1
-0x47    $8400-$87FF      1   0   0   0   1   1   1|         1         1         1         0         1         1         1         1
-0x4a    $9000-$93FF      1   0   0   1   0   1   0|         1         1         1         1         0         1         1         1
-0x4b    $9000-$93FF      1   0   0   1   0   1   1|         1         1         1         1         0         1         1         1
-0x4e    $9400-$97FF      1   0   0   1   1   1   0|         1         1         1         1         1         0         1         1
-0x4f    $9400-$97FF      1   0   0   1   1   1   1|         1         1         1         1         1         0         1         1
-0x52    $A000-$A7FF      1   0   1   0   0   1   0|         1         1         1         1         1         1         0         1
-0x53    $A000-$A7FF      1   0   1   0   0   1   1|         1         1         1         1         1         1         0         1
-0x62    $C000-$FFFF      1   1   0   0   0   1   0|         1         1         1         1         1         1         1         0
-0x63    $C000-$FFFF      1   1   0   0   0   1   1|         1         1         1         1         1         1         1         0
-0x66    $C000-$FFFF      1   1   0   0   1   1   0|         1         1         1         1         1         1         1         0
-0x67    $C000-$FFFF      1   1   0   0   1   1   1|         1         1         1         1         1         1         1         0
-0x6a    $C000-$FFFF      1   1   0   1   0   1   0|         1         1         1         1         1         1         1         0
-0x6b    $C000-$FFFF      1   1   0   1   0   1   1|         1         1         1         1         1         1         1         0
-0x6e    $C000-$FFFF      1   1   0   1   1   1   0|         1         1         1         1         1         1         1         0
-0x6f    $C000-$FFFF      1   1   0   1   1   1   1|         1         1         1         1         1         1         1         0
-0x72    $C000-$FFFF      1   1   1   0   0   1   0|         1         1         1         1         1         1         1         0
-0x73    $C000-$FFFF      1   1   1   0   0   1   1|         1         1         1         1         1         1         1         0
-0x76    $C000-$FFFF      1   1   1   0   1   1   0|         1         1         1         1         1         1         1         0
-0x77    $C000-$FFFF      1   1   1   0   1   1   1|         1         1         1         1         1         1         1         0
-0x7a    $C000-$FFFF      1   1   1   1   0   1   0|         1         1         1         1         1         1         1         0
-0x7b    $C000-$FFFF      1   1   1   1   0   1   1|         1         1         1         1         1         1         1         0
-0x7e    $C000-$FFFF      1   1   1   1   1   1   0|         1         1         1         1         1         1         1         0
-0x7f    $C000-$FFFF      1   1   1   1   1   1   1|         1         1         1         1         1         1         1         0
-```
-
-### Output .bin image contents
-```cs
-FF FF BF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF DF DF FF FF EF EF FF FF F7 F7 FF FF FB FB FF FF FD FD FF FF FF FF FF FF FF FF FF FF FF FF FF FF FE FE FF FF FE FE FF FF FE FE FF FF FE FE FF FF FE FE FF FF FE FE FF FF FE FE FF FF FE FE
-```
-
-
